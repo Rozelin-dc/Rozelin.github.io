@@ -1,5 +1,5 @@
 #icon {
-  width: 100px
+  width: 100px;
 }
 
 .container {
@@ -10,8 +10,8 @@
 .color {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom, #a6d900 0%, #ff4454 100%);
-  opacity: 0.5;
+  background: linear-gradient(to bottom, #a6d90079 0%, #ff445473 100%);
+  opacity: 1;
   animation: huerotator 3s infinite alternate;
 }
 
