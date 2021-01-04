@@ -15,6 +15,12 @@
   animation: huerotator 3s infinite alternate;
 }
 
+.button {
+  border: solid #4b0082;
+  color: #4b0082;
+  padding: 5px 10px;
+}
+
 @keyframes huerotator {
   0% {
     -webkit-filter: hue-rotate(0deg);
