@@ -11,12 +11,9 @@
           {{ route.name }}
         </router-link>
         <div>
-          <link-icon
-            v-for="link in links"
-            :key="link.url"
-            :href="link.url"
-            :icon-name="link.img"
-          />
+          <link-icon href="https://github.com/Rozelin-dc/">
+            <img src="@/icons/svg/github-fill.svg" />
+          </link-icon>
         </div>
       </span>
     </div>
@@ -40,25 +37,6 @@ import LinkIcon from './link-icon.vue'
 export default class extends Vue {
   showMenu!: boolean
   routes = routes
-
-  links = [
-    {
-      url: 'https://github.com/Rozelin-dc/vue-web-page',
-      img: '@/icons/svg/github-fill.svg',
-    },
-    {
-      url: 'https://twitter.com/',
-      img: '@/icons/svg/twitter-fill.svg',
-    },
-    {
-      url: 'https://soundcloud.com/',
-      img: '@/icons/svg/soundcloud-fill.svg',
-    },
-    {
-      url: 'https://www.youtube.com/',
-      img: '@/icons/svg/youtube-fill.svg',
-    },
-  ]
 }
 </script>
 

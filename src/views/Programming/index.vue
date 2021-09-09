@@ -40,18 +40,43 @@ import ProgrammingWorkIntroduction from './WorkIntroduction.vue'
   },
 })
 export default class Home extends Vue {
-  langs = ['Vue.js', 'Typescript', 'C++']
-  tools = ['Git', 'Unity']
+  langs = [
+    'Vue.js',
+    'Typescript / JavaScript',
+    'C++',
+    'C#',
+    'C',
+    'Java',
+    'Python',
+  ]
+  tools = ['Git', 'Unity', 'Docker']
   works: Work[] = [
     {
-      name: 'sample',
-      url: 'http://example.com',
-      descriptions: ['This is sample', 'This work is not exist'],
+      name: 'traPortal',
+      url: 'https://trap.jp/post/1181/',
+      descriptions: [
+        'サークル内で利用されている部員管理のwebサービスです',
+        'チームで開発・運用を行っており、2021/04からクライアントサイドのプロジェクトリーダーをしています',
+        'クライアントサイドはVue Element Adminを元にVue.js+TypeScript+SCSSで構成されています',
+      ],
     },
     {
-      name: 'sample',
-      url: 'http://example.com',
-      descriptions: ['This is sample', 'This work is not exist'],
+      name: `Rozelin's App`,
+      url: 'https://rozelin-dc.github.io/SimpleApp/',
+      descriptions: [
+        'Vue.js+TypeScriptで個人開発したweb上で使えるアプリです',
+        'TODOリストやzoomリンクの管理ができます',
+        'データはブラウザのローカルストレージに保存されます',
+      ],
+    },
+    {
+      name: 'あつまれ おんがくの民',
+      url: 'https://trap.jp/post/1103/',
+      descriptions: [
+        'サークル内のハッカソンでチーム開発したゲームです',
+        'C++、DXライブラリを使用しています',
+        'リザルト画面を担当しました',
+      ],
     },
   ]
 }

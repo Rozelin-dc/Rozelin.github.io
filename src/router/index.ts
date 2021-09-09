@@ -8,15 +8,6 @@ export const routes: Array<RouteRecordRaw> = [
       import(/* webpackChunkName: "home" */ '@/views/Home/index.vue'),
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ '@/views/About/index.vue'),
-  },
-  {
     path: '/programming',
     name: 'Programming',
     component: () =>
@@ -25,10 +16,10 @@ export const routes: Array<RouteRecordRaw> = [
       ),
   },
   {
-    path: '/musics',
-    name: 'Musics',
+    path: '/career',
+    name: 'Career',
     component: () =>
-      import(/* webpackChunkName: "music" */ '@/views/Musics/index.vue'),
+      import(/* webpackChunkName: "career" */ '@/views/Career/index.vue'),
   },
 ]
 

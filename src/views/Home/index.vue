@@ -2,23 +2,22 @@
   <div class="main-container">
     <!-- Replace with your icon -->
     <img class="icon" src="@/icons/png/icon.png" />
-    This is a portfolio template made with Vue.js + TypeScript that can be
-    published on github-pages.
-    <br />
-    View on <a href="https://github.com/Rozelin-dc/vue-portfolio">GitHub</a>
-    <hello-world msg="Welcome to Your Vue.js + TypeScript App" />
+    <div class="content">
+      <h3>Rozelin</h3>
+      所属: <a href="https://trap.jp/">デジタル創作同好会traP</a>
+    </div>
+    <div class="content">
+      <h4>活動</h4>
+      webクライアントサイドの開発・運用を中心に、競技プログラミング(AtCoder)などのプログラミングを行っています
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
 
 @Options({
   name: 'Home',
-  components: {
-    HelloWorld,
-  },
 })
 export default class Home extends Vue {}
 </script>
@@ -26,5 +25,10 @@ export default class Home extends Vue {}
 <style lang="scss" scoped>
 .icon {
   float: right;
+  width: 150px;
+}
+
+.content {
+  margin-bottom: 20px;
 }
 </style>

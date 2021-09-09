@@ -1,7 +1,7 @@
 <template>
   <span class="icon">
     <a :href="href">
-      <img :src="iconName" />
+      <slot />
     </a>
   </span>
 </template>
@@ -13,12 +13,10 @@ import { Options, Vue } from 'vue-class-component'
   name: 'LinkIcon',
   props: {
     href: String,
-    iconName: String,
   },
 })
 export default class extends Vue {
   href!: string
-  iconName!: string
 }
 </script>
 

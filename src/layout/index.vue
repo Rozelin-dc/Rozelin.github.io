@@ -3,7 +3,7 @@
     <el-container>
       <el-header height="70px">
         <router-link :to="{ name: 'Home' }" class="top-link">
-          vue-portfolio
+          Rozelin's Portfolio
         </router-link>
         <span class="menu-icon">
           <img
