@@ -22,7 +22,6 @@
         v-for="work in works"
         :key="work.name"
         :work="work"
-        style="display: inline-block"
       />
     </div>
   </div>
