@@ -1,6 +1,6 @@
 <template>
   <div class="display-careers-per-year-container">
-    <h4>{{ career.year }} 年</h4>
+    <h3>{{ career.year }} 年</h3>
     <ui>
       <li v-for="careerIndividual in career.careers" :key="careerIndividual">
         {{ careerIndividual }}
@@ -33,7 +33,7 @@ export default class Home extends Vue {
   margin: 10px 0;
 
   li {
-    line-height: 1em;
+    line-height: 1.5em;
   }
 }
 </style>

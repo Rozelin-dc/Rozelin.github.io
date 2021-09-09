@@ -1,6 +1,5 @@
 <template>
   <div class="main-container">
-    <h3>Career</h3>
     <display-careers-per-year
       v-for="career in careers"
       :key="career.year"

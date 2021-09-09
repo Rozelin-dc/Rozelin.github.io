@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div v-show="showMenu" class="menu-container">
+    <div class="menu-container">
       <span class="contents">
         <router-link
           v-for="route in routes"
@@ -10,11 +10,11 @@
         >
           {{ route.name }}
         </router-link>
-        <div>
+        <span class="link-icons">
           <link-icon href="https://github.com/Rozelin-dc/">
             <img src="@/icons/svg/github-fill.svg" />
           </link-icon>
-        </div>
+        </span>
       </span>
     </div>
   </transition>
@@ -30,12 +30,8 @@ import LinkIcon from './link-icon.vue'
   components: {
     LinkIcon,
   },
-  props: {
-    showMenu: Boolean,
-  },
 })
 export default class extends Vue {
-  showMenu!: boolean
   routes = routes
 }
 </script>
@@ -53,10 +49,17 @@ export default class extends Vue {
     padding: 0 20px;
 
     .link {
+      font-size: 25px;
       line-height: 2em;
       margin-right: 20px;
       color: white;
       text-decoration: none;
+    }
+
+    .link-icons {
+      float: right;
+      margin-top: 10px;
+      margin-right: 10px;
     }
   }
 }

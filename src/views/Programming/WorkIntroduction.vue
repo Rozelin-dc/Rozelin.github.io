@@ -31,7 +31,7 @@ export default class Home extends Vue {
   margin: 0 20px 10px 0;
 
   li {
-    line-height: 1em;
+    line-height: 1.5em;
   }
 }
 </style>

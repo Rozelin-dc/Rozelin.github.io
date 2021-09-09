@@ -1,27 +1,15 @@
 <template>
   <div>
     <el-container>
-      <el-header height="70px">
+      <el-header height="110px">
         <router-link :to="{ name: 'Home' }" class="top-link">
           Rozelin's Portfolio
         </router-link>
-        <span class="menu-icon">
-          <img
-            v-if="!showMenu"
-            src="@/icons/svg/menu-line.svg"
-            @click="showMenu = true"
-          />
-          <img
-            v-else
-            src="@/icons/svg/close-line.svg"
-            @click="showMenu = false"
-          />
-        </span>
+
+        <header-menu class="header-menu" />
       </el-header>
 
       <el-main>
-        <header-menu :show-menu="showMenu" />
-
         <route-title />
 
         <transition name="fade-transform" mode="out-in">
@@ -60,6 +48,7 @@ export default class extends Vue {
 .el-header {
   background: #4e2d1a;
   margin: 0;
+  padding: 0;
 }
 
 .el-main {
@@ -71,16 +60,13 @@ export default class extends Vue {
 </style>
 
 <style lang="scss" scoped>
+.header-menu {
+  margin-top: 10px;
+}
+
 .top-link {
   font-size: 40px;
   color: white;
   text-decoration: none;
-}
-
-.menu-icon {
-  position: relative;
-  vertical-align: middle;
-  margin-top: 10px;
-  float: right;
 }
 </style>
