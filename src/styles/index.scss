@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-size: 25px;
+}
+
+h3, h4 {
+  margin: 0 0 10px 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+a {
+  color: black;
+
+  &:hover {
+    color: grey;
+  }
+}
+
+#app {
+  /* If you want to use a different font, rewrite here */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+  margin: 40px 5vw;
+  line-height: 1.5em;
+}
