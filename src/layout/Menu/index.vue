@@ -1,23 +1,21 @@
 <template>
-  <transition name="fade">
-    <div class="menu-container">
-      <span class="contents">
-        <router-link
-          v-for="route in routes"
-          :key="route.name"
-          :to="route"
-          class="link"
-        >
-          {{ route.name }}
-        </router-link>
-        <span class="link-icons">
-          <link-icon href="https://github.com/Rozelin-dc/">
-            <img src="@/icons/svg/github-fill.svg" />
-          </link-icon>
-        </span>
+  <div class="menu-container">
+    <span class="contents">
+      <router-link
+        v-for="route in routes"
+        :key="route.name"
+        :to="route"
+        class="link"
+      >
+        {{ route.name }}
+      </router-link>
+      <span class="link-icons">
+        <link-icon href="https://github.com/Rozelin-dc/">
+          <img src="@/icons/svg/github-fill.svg" />
+        </link-icon>
       </span>
-    </div>
-  </transition>
+    </span>
+  </div>
 </template>
 
 <script lang="ts">
