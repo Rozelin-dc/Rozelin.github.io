@@ -1,4 +1,4 @@
 module.exports = {
-  publicPath: '/Rozelin-dc.github.io/',
+  publicPath: '/',
   outputDir: 'docs',
 }
