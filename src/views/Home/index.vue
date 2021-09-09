@@ -9,6 +9,7 @@
     <div class="content">
       <h4>活動</h4>
       webクライアントサイドの開発・運用を中心に、競技プログラミング(AtCoder)などのプログラミングを行っています
+      aaaa
     </div>
   </div>
 </template>
