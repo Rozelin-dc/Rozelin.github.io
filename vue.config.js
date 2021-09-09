@@ -1,4 +1,4 @@
 module.exports = {
-  publicPath: '/vue-portfolio/',
+  publicPath: '/Rozelin-dc.github.io/',
   outputDir: 'docs',
 }
