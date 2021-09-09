@@ -2,11 +2,9 @@
   <div>
     <el-container>
       <el-header height="110px">
-        <h1>
-          <router-link :to="{ name: 'Home' }" class="top-link">
-            Rozelin's Portfolio
-          </router-link>
-        </h1>
+        <router-link :to="{ name: 'Home' }" class="top-link">
+          Rozelin's Portfolio
+        </router-link>
 
         <header-menu class="header-menu" />
       </el-header>
@@ -63,6 +61,8 @@ export default class extends Vue {
 }
 
 .top-link {
+  font-size: 40px;
+  margin-left: 20px;
   color: white;
   text-decoration: none;
 }
