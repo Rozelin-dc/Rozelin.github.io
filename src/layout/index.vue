@@ -36,7 +36,7 @@ export default class extends Vue {
       window.matchMedia &&
       window.matchMedia('(max-device-width: 640px)').matches
     ) {
-      return '130px'
+      return '150px'
     } else {
       return '110px'
     }
