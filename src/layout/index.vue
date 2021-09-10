@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-container>
-      <el-header height="110px">
+      <el-header :height="headerHight">
         <router-link :to="{ name: 'Home' }" class="top-link">
           Rozelin's Portfolio
         </router-link>
@@ -29,14 +29,18 @@ import RouteTitle from './RouteTitle/index.vue'
     HeaderMenu,
     RouteTitle,
   },
-  watch: {
-    $route() {
-      this.showMenu = false
-    },
-  },
 })
 export default class extends Vue {
-  showMenu = false
+  get headerHight() {
+    if (
+      window.matchMedia &&
+      window.matchMedia('(max-device-width: 640px)').matches
+    ) {
+      return '130px'
+    } else {
+      return '110px'
+    }
+  }
 }
 </script>
 
