@@ -41,7 +41,7 @@ import ProgrammingWorkIntroduction from './WorkIntroduction.vue'
 export default class Home extends Vue {
   langs = [
     'Vue.js',
-    'Typescript / JavaScript',
+    'TypeScript / JavaScript',
     'C++',
     'C#',
     'C',
