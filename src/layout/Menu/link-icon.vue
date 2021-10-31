@@ -1,7 +1,7 @@
 <template>
   <span class="icon">
     <a :href="href">
-      <slot />
+      <slot class="icon-body" />
     </a>
   </span>
 </template>
@@ -23,5 +23,10 @@ export default class extends Vue {
 <style lang="scss" scoped>
 .icon {
   margin: 5px;
+
+  .icon-body {
+    height: 36px;
+    width: 36px;
+  }
 }
 </style>

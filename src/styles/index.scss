@@ -1,3 +1,8 @@
+#app {
+  /* If you want to use a different font, rewrite here */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
   margin: 0;
   font-size: 20px;
@@ -33,11 +38,6 @@ a {
   &:hover {
     color: grey;
   }
-}
-
-#app {
-  /* If you want to use a different font, rewrite here */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main-container {
