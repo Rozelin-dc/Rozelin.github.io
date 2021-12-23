@@ -54,7 +54,7 @@ export default class Home extends Vue {
       name: 'traPortal',
       url: 'https://trap.jp/post/1181/',
       descriptions: [
-        'サークル内で利用されている部員管理のwebサービスです',
+        'サークル内で利用されている部員情報管理などができるwebサービスです',
         'チームで開発・運用を行っており、2021/04からクライアントサイドのプロジェクトリーダーをしています',
         'クライアントサイドはVue Element Adminを元にVue.js+TypeScript+SCSSで構成されています',
       ],
@@ -75,6 +75,16 @@ export default class Home extends Vue {
         'サークル内のハッカソンでチーム開発したゲームです',
         'C++、DXライブラリを使用しています',
         'リザルト画面を担当しました',
+      ],
+    },
+    {
+      name: 'HiQidas',
+      url: 'https://trap.jp/post/1441/',
+      descriptions: [
+        'サークル内のハッカソンでチーム開発したwebアプリです',
+        'ブラウザで複数人でブレインストーミングができるツールです',
+        'クライアントはVue.js+TypeScript、サーバーはGoで作られています',
+        'クライアントサイドを担当しました',
       ],
     },
   ]
