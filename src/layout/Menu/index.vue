@@ -2,7 +2,7 @@
   <div class="menu-container">
     <span class="contents">
       <router-link
-        v-for="route in routes"
+        v-for="route in routesRef"
         :key="route.name"
         :to="route"
         class="link"
@@ -24,19 +24,21 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component'
+import { defineComponent, ref } from 'vue'
 import { routes } from '@/router'
 import LinkIcon from './link-icon.vue'
 
-@Options({
+export default defineComponent({
   name: 'HeaderMenu',
   components: {
     LinkIcon,
   },
+  setup() {
+    const routesRef = ref(routes)
+
+    return { routesRef }
+  },
 })
-export default class extends Vue {
-  routes = routes
-}
 </script>
 
 <style lang="scss" scoped>
