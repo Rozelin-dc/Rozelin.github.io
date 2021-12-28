@@ -28,67 +28,69 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component'
+import { defineComponent, ref } from 'vue'
 import { Work } from '@/utils/types'
 import ProgrammingWorkIntroduction from './WorkIntroduction.vue'
 
-@Options({
+export default defineComponent({
   name: 'Programming',
   components: {
     ProgrammingWorkIntroduction,
   },
+  setup() {
+    const langs = ref([
+      'Vue.js',
+      'TypeScript / JavaScript',
+      'C++',
+      'C#',
+      'C',
+      'Java',
+      'Python',
+    ])
+    const tools = ref(['Git', 'Unity', 'Docker'])
+    const works = ref<Work[]>([
+      {
+        name: 'traPortal',
+        url: 'https://trap.jp/post/1181/',
+        descriptions: [
+          'サークル内で利用されている部員情報管理などができるwebサービスです',
+          'チームで開発・運用を行っており、2021/04からクライアントサイドのプロジェクトリーダーをしています',
+          'クライアントサイドはVue Element Adminを元にVue.js+TypeScript+SCSSで構成されています',
+        ],
+      },
+      {
+        name: `Rozelin's App`,
+        url: 'https://rozelin-dc.github.io/SimpleApp/',
+        descriptions: [
+          'Vue.js+TypeScriptで個人開発したweb上で使えるアプリです',
+          'TODOリストやzoomリンクの管理ができます',
+          'データはブラウザのローカルストレージに保存されます',
+        ],
+      },
+      {
+        name: 'あつまれ おんがくの民',
+        url: 'https://trap.jp/post/1103/',
+        descriptions: [
+          'サークル内のハッカソンでチーム開発したゲームです',
+          'C++、DXライブラリを使用しています',
+          'リザルト画面を担当しました',
+        ],
+      },
+      {
+        name: 'HiQidas',
+        url: 'https://trap.jp/post/1441/',
+        descriptions: [
+          'サークル内のハッカソンでチーム開発したwebアプリです',
+          'ブラウザで複数人でブレインストーミングができるツールです',
+          'クライアントはVue.js+TypeScript、サーバーはGoで作られています',
+          'クライアントサイドを担当しました',
+        ],
+      },
+    ])
+
+    return { langs, tools, works }
+  },
 })
-export default class Home extends Vue {
-  langs = [
-    'Vue.js',
-    'TypeScript / JavaScript',
-    'C++',
-    'C#',
-    'C',
-    'Java',
-    'Python',
-  ]
-  tools = ['Git', 'Unity', 'Docker']
-  works: Work[] = [
-    {
-      name: 'traPortal',
-      url: 'https://trap.jp/post/1181/',
-      descriptions: [
-        'サークル内で利用されている部員情報管理などができるwebサービスです',
-        'チームで開発・運用を行っており、2021/04からクライアントサイドのプロジェクトリーダーをしています',
-        'クライアントサイドはVue Element Adminを元にVue.js+TypeScript+SCSSで構成されています',
-      ],
-    },
-    {
-      name: `Rozelin's App`,
-      url: 'https://rozelin-dc.github.io/SimpleApp/',
-      descriptions: [
-        'Vue.js+TypeScriptで個人開発したweb上で使えるアプリです',
-        'TODOリストやzoomリンクの管理ができます',
-        'データはブラウザのローカルストレージに保存されます',
-      ],
-    },
-    {
-      name: 'あつまれ おんがくの民',
-      url: 'https://trap.jp/post/1103/',
-      descriptions: [
-        'サークル内のハッカソンでチーム開発したゲームです',
-        'C++、DXライブラリを使用しています',
-        'リザルト画面を担当しました',
-      ],
-    },
-    {
-      name: 'HiQidas',
-      url: 'https://trap.jp/post/1441/',
-      descriptions: [
-        'サークル内のハッカソンでチーム開発したwebアプリです',
-        'ブラウザで複数人でブレインストーミングができるツールです',
-        'クライアントはVue.js+TypeScript、サーバーはGoで作られています',
-        'クライアントサイドを担当しました',
-      ],
-    },
-  ]
-}
 </script>
 
 <style lang="scss" scoped>

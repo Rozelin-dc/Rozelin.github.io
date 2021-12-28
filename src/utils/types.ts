@@ -3,3 +3,8 @@ export interface Work {
   url: String
   descriptions: Array<String>
 }
+
+export interface CareersPerYear {
+  year: number
+  careers: Array<String>
+}

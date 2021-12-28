@@ -5,13 +5,13 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component'
+import { defineComponent } from 'vue'
 import Layout from '@/layout/index.vue'
 
-@Options({
+export default defineComponent({
+  name: 'App',
   components: {
     Layout,
   },
 })
-export default class extends Vue {}
 </script>
