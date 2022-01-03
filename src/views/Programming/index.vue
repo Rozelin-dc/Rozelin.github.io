@@ -29,7 +29,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import { Work } from '@/utils/types'
+import { Work } from '/@/utils/types'
 import ProgrammingWorkIntroduction from './WorkIntroduction.vue'
 
 export default defineComponent({

@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-import { CareersPerYear } from '@/utils/types'
+import { CareersPerYear } from '/@/utils/types'
 
 export default defineComponent({
   name: 'DisplayCareersPerYear',

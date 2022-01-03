@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-import { Work } from '@/utils/types'
+import { Work } from '/@/utils/types'
 
 export default defineComponent({
   name: 'ProgrammingWorkIntroduction',

@@ -25,7 +25,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import { routes } from '@/router'
+import { routes } from '/@/router'
 import LinkIcon from './link-icon.vue'
 
 export default defineComponent({

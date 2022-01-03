@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import { CareersPerYear } from '@/utils/types'
+import { CareersPerYear } from '/@/utils/types'
 import DisplayCareersPerYear from './DisplayCareersPerYear.vue'
 
 export default defineComponent({
