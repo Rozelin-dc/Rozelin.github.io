@@ -10,22 +10,18 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component'
+import { defineComponent, PropType } from 'vue'
+import { CareersPerYear } from '/@/utils/types'
 
-export interface CareersPerYear {
-  year: number
-  careers: Array<String>
-}
-
-@Options({
+export default defineComponent({
   name: 'DisplayCareersPerYear',
   props: {
-    career: Object,
+    career: { required: true, type: Object as PropType<CareersPerYear> },
+  },
+  setup(props) {
+    return { ...props }
   },
 })
-export default class Home extends Vue {
-  career!: CareersPerYear
-}
 </script>
 
 <style lang="scss" scoped>

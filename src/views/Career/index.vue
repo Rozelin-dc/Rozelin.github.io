@@ -9,27 +9,28 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component'
-import DisplayCareersPerYear, {
-  CareersPerYear,
-} from './DisplayCareersPerYear.vue'
+import { defineComponent, ref } from 'vue'
+import { CareersPerYear } from '/@/utils/types'
+import DisplayCareersPerYear from './DisplayCareersPerYear.vue'
 
-@Options({
+export default defineComponent({
   name: 'Career',
   components: {
     DisplayCareersPerYear,
   },
+  setup() {
+    const careers = ref<CareersPerYear[]>([
+      {
+        year: 2021,
+        careers: [
+          'Google STEP Development Course 参加',
+          'ISUCON11 参加',
+          'ICTトラブルシューティングコンテスト2021 夏の陣 参加',
+        ],
+      },
+    ])
+
+    return { careers }
+  },
 })
-export default class Home extends Vue {
-  careers: CareersPerYear[] = [
-    {
-      year: 2021,
-      careers: [
-        'Google STEP Development Course 参加',
-        'ISUCON11 参加',
-        'ICTトラブルシューティングコンテスト2021 夏の陣 参加',
-      ],
-    },
-  ]
-}
 </script>

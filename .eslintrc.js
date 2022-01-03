@@ -4,9 +4,8 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:vue/recommended',
-    '@vue/prettier',
-    '@vue/typescript',
+    'plugin:vue/vue3-recommended',
+    'plugin:prettier/recommended',
   ],
   parserOptions: {
     parser: '@typescript-eslint/parser',
@@ -17,7 +16,7 @@ module.exports = {
   plugins: ['vue', '@typescript-eslint'],
   rules: {
     'prettier/prettier': [
-      'error',
+      'warn',
       {
         singleQuote: true,
         semi: false,
@@ -29,5 +28,6 @@ module.exports = {
       { anonymous: 'never', named: 'never', asyncArrow: 'always' },
     ],
     'no-unused-vars': 'off',
+    'vue/multi-word-component-names': 'off',
   },
 }

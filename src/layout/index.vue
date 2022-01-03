@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-container>
-      <el-header :height="headerHight">
+      <el-header :height="headerHeight">
         <router-link :to="{ name: 'Home' }" class="top-link">
           Rozelin's Portfolio
         </router-link>
@@ -19,29 +19,31 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component'
+import { computed, defineComponent } from 'vue'
 import HeaderMenu from './Menu/index.vue'
 import RouteTitle from './RouteTitle/index.vue'
 
-@Options({
+export default defineComponent({
   name: 'Layout',
   components: {
     HeaderMenu,
     RouteTitle,
   },
+  setup() {
+    const headerHeight = computed(() => {
+      if (
+        window.matchMedia &&
+        window.matchMedia('(max-device-width: 640px)').matches
+      ) {
+        return '150px'
+      } else {
+        return '110px'
+      }
+    })
+
+    return { headerHeight }
+  },
 })
-export default class extends Vue {
-  get headerHight() {
-    if (
-      window.matchMedia &&
-      window.matchMedia('(max-device-width: 640px)').matches
-    ) {
-      return '150px'
-    } else {
-      return '110px'
-    }
-  }
-}
 </script>
 
 <style lang="scss">

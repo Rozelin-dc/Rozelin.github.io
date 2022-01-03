@@ -12,18 +12,18 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component'
-import { Work } from '@/utils/types'
+import { defineComponent, PropType } from 'vue'
+import { Work } from '/@/utils/types'
 
-@Options({
+export default defineComponent({
   name: 'ProgrammingWorkIntroduction',
   props: {
-    work: Object,
+    work: { required: true, type: Object as PropType<Work> },
+  },
+  setup(props) {
+    return { ...props }
   },
 })
-export default class Home extends Vue {
-  work!: Work
-}
 </script>
 
 <style lang="scss" scoped>

@@ -7,17 +7,17 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component'
+import { defineComponent } from 'vue'
 
-@Options({
+export default defineComponent({
   name: 'LinkIcon',
   props: {
-    href: String,
+    href: { required: true, type: String },
+  },
+  setup(props) {
+    return { ...props }
   },
 })
-export default class extends Vue {
-  href!: string
-}
 </script>
 
 <style lang="scss" scoped>
