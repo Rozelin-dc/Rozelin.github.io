@@ -68,7 +68,6 @@ export default defineComponent({
 
 .top-link {
   font-size: 40px;
-  margin-left: 20px;
   color: white;
   text-decoration: none;
 }
