@@ -11,12 +11,12 @@
       </router-link>
       <span class="link-icons">
         <link-icon href="https://atcoder.jp/users/Rozelin">
-          <img src="@/icons/svg/atcoder.svg" />
+          <img src="/@/icons/svg/atcoder.svg" />
         </link-icon>
       </span>
       <span class="link-icons">
         <link-icon href="https://github.com/Rozelin-dc/">
-          <img src="@/icons/svg/github-fill.svg" />
+          <img src="/@/icons/svg/github-fill.svg" />
         </link-icon>
       </span>
     </span>

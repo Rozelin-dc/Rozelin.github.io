@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <!-- Replace with your icon -->
-    <img class="icon" src="@/icons/png/icon.png" />
+    <img class="icon" src="/@/icons/png/icon.png" />
     <div class="content">
       <h3>Rozelin</h3>
       所属: <a href="https://trap.jp/">デジタル創作同好会traP</a>
