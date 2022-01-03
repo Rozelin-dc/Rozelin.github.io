@@ -14,6 +14,5 @@ export default defineConfig(() => ({
     port: 8080,
   },
   publicPath: '/',
-  outputDir: 'docs',
   plugins: [VuePlugin()],
 }))
