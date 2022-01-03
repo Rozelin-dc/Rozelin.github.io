@@ -4,6 +4,8 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    './eslint-vue-ts-recommended.js',
+    'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
     'plugin:prettier/recommended',
   ],
