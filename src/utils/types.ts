@@ -1,10 +1,10 @@
 export interface Work {
   name: string
-  url: String
-  descriptions: Array<String>
+  url: string
+  descriptions: Array<string>
 }
 
 export interface CareersPerYear {
   year: number
-  careers: Array<String>
+  careers: Array<string>
 }
