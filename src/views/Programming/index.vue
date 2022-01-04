@@ -53,7 +53,7 @@ export default defineComponent({
         name: 'traPortal',
         url: 'https://trap.jp/post/1181/',
         descriptions: [
-          'サークル内で利用されている部員情報管理などができるwebサービスです',
+          'サークル内で利用されている部員情報管理などができるWebサービスです',
           'チームで開発・運用を行っており、2021/04からクライアントサイドのプロジェクトリーダーをしています',
           'クライアントサイドはVue Element Adminを元にVue.js+TypeScript+SCSSで構成されています',
         ],
@@ -62,7 +62,7 @@ export default defineComponent({
         name: `Rozelin's App`,
         url: 'https://rozelin-dc.github.io/SimpleApp/',
         descriptions: [
-          'Vue.js+TypeScriptで個人開発したweb上で使えるアプリです',
+          'Vue.js+TypeScriptで個人開発したWeb上で使えるアプリです',
           'TODOリストやzoomリンクの管理ができます',
           'データはブラウザのローカルストレージに保存されます',
         ],
@@ -80,7 +80,7 @@ export default defineComponent({
         name: 'HiQidas',
         url: 'https://trap.jp/post/1441/',
         descriptions: [
-          'サークル内のハッカソンでチーム開発したwebアプリです',
+          'サークル内のハッカソンでチーム開発したWebアプリです',
           'ブラウザで複数人でブレインストーミングができるツールです',
           'クライアントはVue.js+TypeScript、サーバーはGoで作られています',
           'クライアントサイドを担当しました',
