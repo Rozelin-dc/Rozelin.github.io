@@ -12,11 +12,11 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'LinkIcon',
   props: {
-    href: { required: true, type: String },
+    href: { required: true, type: String }
   },
   setup(props) {
     return { ...props }
-  },
+  }
 })
 </script>
 

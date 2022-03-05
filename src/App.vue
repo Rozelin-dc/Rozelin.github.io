@@ -11,7 +11,7 @@ import Layout from '/@/layout/index.vue'
 export default defineComponent({
   name: 'App',
   components: {
-    Layout,
-  },
+    Layout
+  }
 })
 </script>

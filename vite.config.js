@@ -7,12 +7,12 @@ const srcPath = path.resolve(__dirname, './src').replace(/\\/g, '/')
 export default defineConfig(() => ({
   resolve: {
     alias: {
-      '/@': srcPath,
-    },
+      '/@': srcPath
+    }
   },
   server: {
-    port: 8080,
+    port: 8080
   },
   publicPath: '/',
-  plugins: [VuePlugin()],
+  plugins: [VuePlugin()]
 }))

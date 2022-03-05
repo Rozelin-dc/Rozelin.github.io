@@ -27,7 +27,7 @@ export default defineComponent({
   name: 'Layout',
   components: {
     HeaderMenu,
-    RouteTitle,
+    RouteTitle
   },
   setup() {
     const headerHeight = computed(() => {
@@ -42,7 +42,7 @@ export default defineComponent({
     })
 
     return { headerHeight }
-  },
+  }
 })
 </script>
 
