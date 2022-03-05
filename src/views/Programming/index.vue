@@ -35,7 +35,7 @@ import ProgrammingWorkIntroduction from './WorkIntroduction.vue'
 export default defineComponent({
   name: 'Programming',
   components: {
-    ProgrammingWorkIntroduction,
+    ProgrammingWorkIntroduction
   },
   setup() {
     const langs = ref([
@@ -45,7 +45,7 @@ export default defineComponent({
       'C#',
       'C',
       'Java',
-      'Python',
+      'Python'
     ])
     const tools = ref(['Git', 'Unity', 'Docker'])
     const works = ref<Work[]>([
@@ -55,8 +55,8 @@ export default defineComponent({
         descriptions: [
           'サークル内で利用されている部員情報管理などができるWebサービスです',
           'チームで開発・運用を行っており、2021/04からクライアントサイドのプロジェクトリーダーをしています',
-          'クライアントサイドはVue Element Adminを元にVue.js+TypeScript+SCSSで構成されています',
-        ],
+          'クライアントサイドはVue Element Adminを元にVue.js+TypeScript+SCSSで構成されています'
+        ]
       },
       {
         name: `Rozelin's App`,
@@ -64,8 +64,8 @@ export default defineComponent({
         descriptions: [
           'Vue.js+TypeScriptで個人開発したWeb上で使えるアプリです',
           'TODOリストやzoomリンクの管理ができます',
-          'データはブラウザのローカルストレージに保存されます',
-        ],
+          'データはブラウザのローカルストレージに保存されます'
+        ]
       },
       {
         name: 'あつまれ おんがくの民',
@@ -73,8 +73,8 @@ export default defineComponent({
         descriptions: [
           'サークル内のハッカソンでチーム開発したゲームです',
           'C++、DXライブラリを使用しています',
-          'リザルト画面を担当しました',
-        ],
+          'リザルト画面を担当しました'
+        ]
       },
       {
         name: 'HiQidas',
@@ -83,13 +83,13 @@ export default defineComponent({
           'サークル内のハッカソンでチーム開発したWebアプリです',
           'ブラウザで複数人でブレインストーミングができるツールです',
           'クライアントはVue.js+TypeScript、サーバーはGoで作られています',
-          'クライアントサイドを担当しました',
-        ],
-      },
+          'クライアントサイドを担当しました'
+        ]
+      }
     ])
 
     return { langs, tools, works }
-  },
+  }
 })
 </script>
 

@@ -16,7 +16,7 @@ import DisplayCareersPerYear from './DisplayCareersPerYear.vue'
 export default defineComponent({
   name: 'Career',
   components: {
-    DisplayCareersPerYear,
+    DisplayCareersPerYear
   },
   setup() {
     const careers = ref<CareersPerYear[]>([
@@ -25,12 +25,12 @@ export default defineComponent({
         careers: [
           'Google STEP Development Course 参加',
           'ISUCON11 参加',
-          'ICTトラブルシューティングコンテスト2021 夏の陣 参加',
-        ],
-      },
+          'ICTトラブルシューティングコンテスト2021 夏の陣 参加'
+        ]
+      }
     ])
 
     return { careers }
-  },
+  }
 })
 </script>

@@ -11,10 +11,10 @@ const typescriptEslintEslintRecommended = require('@typescript-eslint/eslint-plu
 
 module.exports = {
   ...typescriptEslintEslintRecommended,
-  overrides: typescriptEslintEslintRecommended.overrides.map((override) => {
+  overrides: typescriptEslintEslintRecommended.overrides.map(override => {
     if (override.files.includes('*.ts')) {
       return { ...override, files: [...override.files, '*.vue'] }
     }
     return override
-  }),
+  })
 }

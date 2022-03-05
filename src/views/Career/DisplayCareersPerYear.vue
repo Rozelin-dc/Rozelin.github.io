@@ -16,11 +16,11 @@ import { CareersPerYear } from '/@/utils/types'
 export default defineComponent({
   name: 'DisplayCareersPerYear',
   props: {
-    career: { required: true, type: Object as PropType<CareersPerYear> },
+    career: { required: true, type: Object as PropType<CareersPerYear> }
   },
   setup(props) {
     return { ...props }
-  },
+  }
 })
 </script>
 

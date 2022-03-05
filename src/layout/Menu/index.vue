@@ -31,13 +31,13 @@ import LinkIcon from './link-icon.vue'
 export default defineComponent({
   name: 'HeaderMenu',
   components: {
-    LinkIcon,
+    LinkIcon
   },
   setup() {
     const routesRef = ref(routes)
 
     return { routesRef }
-  },
+  }
 })
 </script>
 

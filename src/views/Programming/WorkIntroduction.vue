@@ -18,11 +18,11 @@ import { Work } from '/@/utils/types'
 export default defineComponent({
   name: 'ProgrammingWorkIntroduction',
   props: {
-    work: { required: true, type: Object as PropType<Work> },
+    work: { required: true, type: Object as PropType<Work> }
   },
   setup(props) {
     return { ...props }
-  },
+  }
 })
 </script>
 
