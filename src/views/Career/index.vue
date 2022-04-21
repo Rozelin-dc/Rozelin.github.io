@@ -27,6 +27,12 @@ export default defineComponent({
           'ISUCON11 参加',
           'ICTトラブルシューティングコンテスト2021 夏の陣 参加'
         ]
+      },
+      {
+        year: 2022,
+        careers: [
+          '3月～ピクシブ株式会社にてフロントエンドエンジニアとしてアルバイト勤務'
+        ]
       }
     ])
 
