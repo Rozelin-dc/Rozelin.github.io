@@ -41,6 +41,7 @@ export default defineComponent({
     const langs = ref([
       'Vue.js',
       'TypeScript / JavaScript',
+      'Go',
       'C++',
       'C#',
       'C',
@@ -59,7 +60,7 @@ export default defineComponent({
         ]
       },
       {
-        name: `Rozelin's App`,
+        name: "Rozelin's App",
         url: 'https://rozelin-dc.github.io/SimpleApp/',
         descriptions: [
           'Vue.js+TypeScriptで個人開発したWeb上で使えるアプリです',
