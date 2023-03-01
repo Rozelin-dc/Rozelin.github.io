@@ -9,7 +9,7 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "core-js": "^3.22.1",
+    "core-js": "^3.29.0",
     "element-plus": "^2.1.10",
     "vue": "^3.2.33",
     "vue-class-component": "^8.0.0-0",
