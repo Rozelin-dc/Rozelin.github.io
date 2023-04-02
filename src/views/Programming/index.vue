@@ -40,15 +40,15 @@ export default defineComponent({
   setup() {
     const langs = ref([
       'Vue.js',
+      'React',
       'TypeScript / JavaScript',
       'Go',
-      'C++',
+      'C / C++',
       'C#',
-      'C',
       'Java',
       'Python'
     ])
-    const tools = ref(['Git', 'Unity', 'Docker'])
+    const tools = ref(['Git', 'Unity', 'Docker', 'SQL'])
     const works = ref<Work[]>([
       {
         name: 'traPortal',
