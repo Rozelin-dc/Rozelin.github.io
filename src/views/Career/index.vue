@@ -32,7 +32,8 @@ export default defineComponent({
         year: 2022,
         careers: [
           '3月～ピクシブ株式会社にてフロントエンドエンジニアとしてアルバイト勤務',
-          'ISUCON12本選出場(チーム: xxRARxx)'
+          'ISUCON12本選出場(チーム: xxRARxx)',
+          '株式会社サイバーエージェントのACEインターンシップに参加'
         ]
       }
     ])
