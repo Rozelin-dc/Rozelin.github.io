@@ -18,11 +18,13 @@
 
     <div class="works-container">
       <h3>Works</h3>
-      <programming-work-introduction
-        v-for="work in works"
-        :key="work.name"
-        :work="work"
-      />
+      <div class="work-items">
+        <programming-work-introduction
+          v-for="work in works"
+          :key="work.name"
+          :work="work"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -55,8 +57,17 @@ export default defineComponent({
         url: 'https://trap.jp/post/1181/',
         descriptions: [
           'サークル内で利用されている部員情報管理などができるWebサービスです',
-          'チームで開発・運用を行っており、2021/04からクライアントサイドのプロジェクトリーダーをしています',
+          'チームで開発・運用を行っており、2021/04~2023/07の期間クライアントサイドのプロジェクトリーダーをしていました',
           'クライアントサイドはVue Element Adminを元にVue.js+TypeScript+SCSSで構成されています'
+        ]
+      },
+      {
+        name: 'Typing Lyrics',
+        url: 'https://trap.jp/post/1983/',
+        descriptions: [
+          '初音ミク「マジカルミライ2023」プログラミング・コンテストに応募し、入選した作品です',
+          '楽曲の歌唱に合わせて歌詞をタイプするタイピングゲームです',
+          'Text Alive App API+React+TypeScript+SCSSで構成されています'
         ]
       },
       {
@@ -104,5 +115,10 @@ export default defineComponent({
 
 .works-container {
   margin-top: 20px;
+
+  .work-items {
+    display: grid;
+    gap: 10px;
+  }
 }
 </style>
