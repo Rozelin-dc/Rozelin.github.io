@@ -41,6 +41,10 @@ export default defineComponent({
         careers: [
           '初音ミク「マジカルミライ2023」プログラミング・コンテストで入選'
         ]
+      },
+      {
+        year: 2024,
+        careers: ['LINEヤフー株式会社にてインターンシップに参加']
       }
     ])
 

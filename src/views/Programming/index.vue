@@ -62,6 +62,14 @@ export default defineComponent({
         ]
       },
       {
+        name: 'Matter.ts',
+        url: 'https://www.npmjs.com/package/@rozelin/matter-ts',
+        descriptions: [
+          'ブラウザで動作する2D物理演算ライブラリMatter.jsのTypeScript移植です',
+          '独自機能として文字の描画に対応しました'
+        ]
+      },
+      {
         name: 'Typing Lyrics',
         url: 'https://trap.jp/post/1983/',
         descriptions: [
